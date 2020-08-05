@@ -1,64 +1,74 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="ko">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- À§ 3°³ÀÇ ¸ŞÅ¸ ÅÂ±×´Â *¹İµå½Ã* head ÅÂ±×ÀÇ Ã³À½¿¡ ¿Í¾ßÇÕ´Ï´Ù; ¾î¶² ´Ù¸¥ ÄÜÅÙÃ÷µéÀº ¹İµå½Ã ÀÌ ÅÂ±×µé *´ÙÀ½¿¡* ¿Í¾ß ÇÕ´Ï´Ù -->
-		<title>ºÎÆ®½ºÆ®·¦ 101 ÅÛÇÃ¸´</title>
+		<!-- ìœ„ 3ê°œì˜ ë©”íƒ€ íƒœê·¸ëŠ” *ë°˜ë“œì‹œ* head íƒœê·¸ì˜ ì²˜ìŒì— ì™€ì•¼í•©ë‹ˆë‹¤; ì–´ë–¤ ë‹¤ë¥¸ ì½˜í…ì¸ ë“¤ì€ ë°˜ë“œì‹œ ì´ íƒœê·¸ë“¤ *ë‹¤ìŒì—* ì™€ì•¼ í•©ë‹ˆë‹¤ -->
+		<title>ë¶€íŠ¸ìŠ¤íŠ¸ë© 101 í…œí”Œë¦¿</title>
 
-		<!-- ºÎÆ®½ºÆ®·¦ -->
+		<!-- ë¶€íŠ¸ìŠ¤íŠ¸ë© -->
 		<link rel="stylesheet" href="../css/bootstrap.css">
 		<link rel="stylesheet" href="../css/default.css">
+		<link rel="stylesheet" href="../css/owl.carousel.css">
+		<link rel="stylesheet" href="../css/owl.theme.default.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+		<!-- jQuery (ë¶€íŠ¸ìŠ¤íŠ¸ë©ì˜ ìë°”ìŠ¤í¬ë¦½íŠ¸ í”ŒëŸ¬ê·¸ì¸ì„ ìœ„í•´ í•„ìš”í•©ë‹ˆë‹¤) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!-- ëª¨ë“  ì»´íŒŒì¼ëœ í”ŒëŸ¬ê·¸ì¸ì„ í¬í•¨í•©ë‹ˆë‹¤ (ì•„ë˜), ì›í•˜ì§€ ì•ŠëŠ”ë‹¤ë©´ í•„ìš”í•œ ê°ê°ì˜ íŒŒì¼ì„ í¬í•¨í•˜ì„¸ìš” -->
+		<script src="../js/bootstrap.min.js"></script>
+		<!--<script src="js/jquery.min.js"></script>-->
+		<script src="../js/owl.carousel.js"></script>
 	</head>
 	<body>
 		<div id="wrap">
 			<div class="app_form">
 				<div class="app_area">
 					<div class="close_btn">
-						<p><a href="#">close</a></p>
+						<p><a href="javascript:WinClose();">close</a></p>
 					</div>
 					<div class="app_title">
 						<h1>
-							<span class="form_img"><img src="<?php echo G5_URL ?>/images/ico-pen.png"/></span>
-							¹æ¹®½ÅÃ»Á¤º¸ ÀÛ¼º
+							<span class="form_img"><img src="../images/ico-pen.png"/></span>
+							ë°©ë¬¸ì‹ ì²­ì •ë³´ ì‘ì„±
 						</h1>
-						<p>¿£·Îºñ °í°´»ç¿¡ ¹æ¹®½ÅÃ»½Ã<br>ÀÚµ¿ÀÔ·ÂµÇ´Â Ç×¸ñÀÔ´Ï´Ù.</p>
+						<p>ì—”ë¡œë¹„ ê³ ê°ì‚¬ì— ë°©ë¬¸ì‹ ì²­ì‹œ<br>ìë™ì…ë ¥ë˜ëŠ” í•­ëª©ì…ë‹ˆë‹¤.</p>
 					</div>
 					<div class="form_label">
-						<p class="label_list">
-							<label class="label" for="label_name">ÀÌ¸§</label>
-							<input type="text" class="form_box form-control" id="label_name">
-							<button class="txt_clear btn">Áö¿ì±â</button>
-							<span class="invalid">ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä.</span>
+						<p class="label_list has-clear">
+							<label class="label" for="label_name">ì´ë¦„</label>
+							<input type="text" name="keyword" class="form_box form-control" id="label_name">
+							<button class="txt_clear btn form-control-clear">ì§€ìš°ê¸°</button>
+							<span class="invalid">ì´ë¦„ì„ ì…ë ¥í•´ì£¼ì„¸ìš”.</span>
 						</p>
 						<p class="label_list">
-							<label class="label" for="label_div">¼Ò¼Ó</label>
-							<input type="text" class="form_box form-control" id="label_div">
-							<button class="txt_clear btn">Áö¿ì±â</button>
-							<span class="invalid">¼Ò¼ÓÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä.</span>
+							<label class="label" for="label_div">ì†Œì†</label>
+							<input type="text" name="keyword" class="form_box form-control" id="label_div">
+							<button class="txt_clear btn">ì§€ìš°ê¸°</button>
+							<span class="invalid">ì†Œì†ì„ ì…ë ¥í•´ì£¼ì„¸ìš”.</span>
 						</p>
 						<p class="label_list">
-							<label class="label" for="label_pos">Á÷Ã¥</label>
-							<input type="text" class="form_box form-control" id="label_pos">
-							<button class="txt_clear btn">Áö¿ì±â</button>
-							<span class="invalid">Á÷Ã¥À» ÀÔ·ÂÇØÁÖ¼¼¿ä.</span>
+							<label class="label" for="label_pos">ì§ì±…</label>
+							<input type="text" name="keyword" class="form_box form-control" id="label_pos">
+							<button class="txt_clear btn form-control-clear">ì§€ìš°ê¸°</button>
+							<span class="invalid">ì§ì±…ì„ ì…ë ¥í•´ì£¼ì„¸ìš”.</span>
 						</p>
 						<p class="label_list">
-							<label class="label" for="label_phone">ÈŞ´ëÀüÈ­</label>
-							<input type="tel" class="form_box form-control" id="label_phone">
-							<button class="txt_clear btn">Áö¿ì±â</button>
-							<span class="invalid">ÈŞ´ëÀüÈ­ ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.</span>
+							<label class="label" for="label_phone">íœ´ëŒ€ì „í™”</label>
+							<input type="tel" name="keyword" class="form_box form-control" id="label_phone">
+							<button class="txt_clear btn form-control-clear">ì§€ìš°ê¸°</button>
+							<span class="invalid">íœ´ëŒ€ì „í™”ë²ˆí˜¸ë¥¼ í™•ì¸í•˜ì‹­ì‹œì˜¤.</span>
 						</p>
 						<p class="label_list">
-							<label class="label" for="label_car">Â÷·®¹øÈ£</label>
-							<input type="text" class="form_box form-control" id="label_car">
-							<button class="txt_clear btn">Áö¿ì±â</button>
+							<label class="label" for="label_car">ì°¨ëŸ‰ë²ˆí˜¸</label>
+							<input type="text" name="keyword" class="form_box form-control" id="label_car">
+							<button class="txt_clear btn form-control-clear">ì§€ìš°ê¸°</button>
 						</p>
 						<p class="label_list">
-							<label class="label" for="label_email">ÀÌ¸ŞÀÏ</label>
-							<input type="email" class="form_box form-control" id="label_email">
-							<button class="txt_clear btn">Áö¿ì±â</button>
+							<label class="label" for="label_email">ì´ë©”ì¼</label>
+							<input type="email" name="keyword" class="form_box form-control" id="label_email">
+							<button class="txt_clear btn form-control-clear">ì§€ìš°ê¸°</button>
 						</p>
 					</div>
 				</div>
@@ -66,41 +76,52 @@
 					<div class="all_service">
 						<p>
 							<input type="checkbox" id="all_check">
-							<label class="label" for="all_check">¾à°ü ÀüÃ¼µ¿ÀÇ</label>
+							<label class="label" for="all_check">ì•½ê´€ ì „ì²´ë™ì˜</label>
 							<button class="down">down</button>
 						</p>
 					</div>
 					<div class="agr">
 						<p>
 							<input type="checkbox" id="sub_check1" class="nurmal_chk">
-							<label class="sub_label" for="sub_check1">°³ÀÎÁ¤º¸ À§Å¹¿¡ °üÇÑ »çÇ× (ÇÊ¼ö)</label>
+							<label class="sub_label" for="sub_check1">ê°œì¸ì •ë³´ ìœ„íƒì— ê´€í•œ ì‚¬í•­ (í•„ìˆ˜)</label>
 						</p>
 						<p>
 							<input type="checkbox" id="sub_check2" class="nurmal_chk">
-							<label class="sub_label" for="sub_check2">°³ÀÎÁ¤º¸ ¼öÁıÇ×¸ñ ¹× ÀÌ¿ë¸ñÀû (ÇÊ¼ö)</label>
+							<label class="sub_label" for="sub_check2">ê°œì¸ì •ë³´ ìˆ˜ì§‘í•­ëª© ë° ì´ìš©ëª©ì  (í•„ìˆ˜)</label>
 						</p>
 						<p>
 							<input type="checkbox" id="sub_check3" class="nurmal_chk">
-							<label class="sub_label" for="sub_check3">°³ÀÎÁ¤º¸ÀÇ Á¦3ÀÚ Á¦°ø¿¡ °üÇÑ »çÇ× (ÇÊ¼ö)</label>
+							<label class="sub_label" for="sub_check3">ê°œì¸ì •ë³´ì˜ ì œ3ì ì œê³µì— ê´€í•œ ì‚¬í•­ (í•„ìˆ˜)</label>
 						</p>
 					</div>
-					<button class="btn form_com" onclick="location.href='<?php echo G5_URL ?>/page/form_comple.php';">ÀÛ¼º¿Ï·á</button>
+					<button class="btn form_com" onclick="location.href='../page/form_comple.html';">ì‘ì„±ì™„ë£Œ</button>
 				</div>
 			</div>
 		</div>
-		<!--  Ã¹ È­¸é ¹æ¹®½ÅÃ»Á¤º¸ ÀÛ¼º Æû -->
+		<!--  ì²« í™”ë©´ ë°©ë¬¸ì‹ ì²­ì •ë³´ ì‘ì„± í¼ -->
 		<script>
-				// Ã¼Å©¹Ú½º ÀüÃ¼ ¼±ÅÃ
+				// ì²´í¬ë°•ìŠ¤ ì „ì²´ ì„ íƒ
 				$(".form_service").on("click", "#all_check", function () {
 					$(this).parents(".form_service").find('input').prop("checked", $(this).is(":checked"));
 				});
-				// Ã¼Å©¹Ú½º °³º° ¼±ÅÃ
+				// ì²´í¬ë°•ìŠ¤ ê°œë³„ ì„ íƒ
 				$(".form_service").on("click", ".nurmal_chk", function() {
 					var is_checked = true;
 					$(".form_service .nurmal_chk").each(function(){
 						is_checked = is_checked && $(this).is(":checked");
 					});
 					$("#all_check").prop("checked", is_checked);
+				});
+
+				// ì‚­ì œ ë²„íŠ¼ í´ë¦­ì‹œ í…ìŠ¤íŠ¸ ì œê±° ìŠ¤í¬ë¦½íŠ¸
+				$('.has-clear input[name="keyword"]').on('input propertychange', function() {
+					var $this = $(this);
+					var visible = Boolean($this.val());
+					$this.siblings('.form-control-clear').toggleClass('hidden', !visible);
+				}).trigger('propertychange');
+				$('.form-control-clear').click(function() {
+					$(this).siblings('input[name="keyword"]').val('')
+						.trigger('propertychange').focus();
 				});
 		</script>
 	</body>
