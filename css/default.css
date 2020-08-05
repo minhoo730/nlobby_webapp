@@ -20,6 +20,7 @@ hr {display:none}
 pre {overflow-x:scroll; font-size:1.1em}
 ul,li,dl,dt,dd {padding:0;margin:0}
 ul {list-style:none}
+button.common_btn{background:#fff; border:1px solid #849c23; color:#849c23; width:100%; font-weight:400; margin:10px 0; font-size:1.2em; margin:10px 0 0 0;}
 
 *,:after,:before {
   -webkit-box-sizing:border-box;
@@ -147,7 +148,7 @@ ul {list-style:none}
 .common .mypage .back_btn p a:before{content: ''; position: absolute; width: 15px; height: 22px; display: inline-block; background: url('../images/ico-top-back.png')no-repeat; left: 0; top: 3px; background-size: 10px;}
 #com_page{padding-top:60px;}
 #com_page .page_tit{font-size: 1.2em; color: #333; font-weight: 500; border-bottom:1px solid #849c23; padding:0 30px 10px 30px;}
-#com_page .my_info{padding:20px; border-bottom:1px solid #d9d9d9;}
+#com_page .my_info{padding:15px; border-bottom:1px solid #d9d9d9; position:relative;}
 #com_page .my_info:after{display:block; content:''; clear:both;}
 #com_page .my_info .left_info{float:left;}
 #com_page .my_info .left_info:after{display:block; content:''; clear:both;}
@@ -155,25 +156,37 @@ ul {list-style:none}
 #com_page .my_info .left_info .profile_img p{width:40px; height:40px;}
 #com_page .my_info .left_info .profile_img p img{width:100%; border:1px solid #d9d9d9; border-radius:5px;}
 #com_page .my_info .left_info .profile_mes{float:left;}
-#com_page .my_info .left_info .profile_mes .mes_tit{font-size:1.25em;}
+#com_page .my_info .left_info .profile_mes .mes_tit{font-size:1.25em; letter-spacing:-1px;}
 #com_page .my_info .left_info .profile_mes .mes_email{font-size:0.85em; font-weight:300; color:#a9a9a9; margin:5px 0;}
-#com_page .my_info .right_info{float:right; text-align:right;}
+#com_page .my_info .right_info{position:absolute; right:15px; top:15px; text-align:right;}
+#com_page .my_info .mb_btn{right:15px; bottom:65px;}
+#com_page .my_info .right_info p{display:inline-block;}
+#com_page .my_info .right_info p a{font-weight:300;}
+#com_page .my_info .right_info .com_del a{color:#fff; background:#333; border-radius:15px; padding:0 10px;}
+#com_page .my_info .right_info .com_setup a{color:#fff; background:#849c23; border-radius:15px; padding:0 10px;}
 #com_page .my_info .right_info .add_cmy a{color:#849c23; font-weight:500; border:1px solid #849c23; border-radius:15px; padding:0px 10px;}
+
+
+/*
 #com_page .my_info .right_info .cmy_mes{color:#a0a0a0; font-weight:500; position:relative; padding-left:20px; margin-top:5px;}
 #com_page .my_info .right_info .cmy_mes:before{position:absolute; content:''; background:url('../images/background_img.png')no-repeat -219px -28px; background-size:300px; width:20px; height:20px; left:0; top:1px;}
+*/
 
+
+/*
 #com_page .share{position:relative; width:100%; padding:20px 0;}
 #com_page .share > div{margin-top:10px;}
-#com_page .share p{/* display:inline-block; *//* width:24%; */text-align:center;}
+#com_page .share p{text-align:center;}
 #com_page .share p a{width: 50px;display: inline-block;position:relative;margin: 0 auto;padding: 55px 0 0 0; color:#333;}
 #com_page .share p a:before{position:absolute;content:'';width: 100%;height:50px; background:url('../images/background_img.png')no-repeat; background-size: 330px; left:0; top:0; background-color:#869e27; border-radius: 50%;}
 #com_page .share p.kakao a:before{background-color:#fae100;background-position: -160px -40px;}
 #com_page .share p.mess_ico a:before{background-position: -199px -130px;}
 #com_page .share p.nlobby_ico a:before{background-position: -160px 5px;}
 #com_page .share p.more_ico a:before{background-position: -199px -91px;}
+*/
+.list_my{margin-top:20px;}
 .list_my .list_area{margin:20px 0; position:relative;}
 .user_info .form_label{margin:20px 0; padding:0 20px;}
-.user_info .form_label > button{background:#fff; border:1px solid #849c23; color:#849c23; width:100%; font-weight:1.0em; margin:10px 0;}
 .user_info .form_labe .consult{padding-left:20px; }
 
 #content .map{padding:0 20px;}
