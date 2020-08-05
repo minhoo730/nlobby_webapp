@@ -20,7 +20,9 @@ hr {display:none}
 pre {overflow-x:scroll; font-size:1.1em}
 ul,li,dl,dt,dd {padding:0;margin:0}
 ul {list-style:none}
-button.common_btn{background:#fff; border:1px solid #849c23; color:#849c23; width:100%; font-weight:400; margin:10px 0; font-size:1.2em; margin:10px 0 0 0;}
+
+.txt_clear{position:absolute; width:18px; height:18px; top:10px; right:0px; text-indent:-9999px; background: url('../images/background_img.png')no-repeat; background-size: 400px 400px; background-position: -292px -84px;}
+button.common_btn{position:relative; background:#fff; border:1px solid #849c23; color:#849c23; width:100%; font-weight:400; margin:10px 0; font-size:1.2em; margin:10px 0 0 0;}
 
 *,:after,:before {
   -webkit-box-sizing:border-box;
@@ -36,34 +38,38 @@ button.common_btn{background:#fff; border:1px solid #849c23; color:#849c23; widt
 .app_form .close_btn p{width:33px; height:33px;}
 .app_form .close_btn p a{display:inline-block; text-indent: -9999px; background: url('../images/background_img.png')no-repeat; background-size: 400px 400px; background-position: -11px -108px; width: 100%; height: 100%;}
 
-.app_form .app_area{width:100%; padding:30px;}
+.app_form .app_area{width:100%; padding:20px;}
 .app_form .comple{display:table-cell; vertical-align:middle;}
 .app_form .app_area .app_title{text-align:center;}
-.app_form .app_area .app_title h1{font-size: 2.0em;color: #849c23;font-weight:500;}
+.app_form .app_area .app_title h1{font-size: 2.0em;color: #333; font-weight:500;}
 .app_form .app_area .app_title h1 .form_img{width:90px; display:block; margin:0 auto; margin-bottom:10px;}
 .app_form .app_area .app_title h1 .form_img img{width:100%;}
-.app_form .app_area .app_title p{font-size:1.2em;color:#a0a0a0;font-weight:400;letter-spacing:-0.5px;margin-bottom: 20px;}
+.app_form .app_area .app_title p{font-size:1.2em;color:#a0a0a0;font-weight:400;letter-spacing:-0.5px;margin: 20px 0;}
 
 /*  폼 작성 공통영역 (첫화면 / 마이페이지) */
 .form_label{margin-top:30px;}
 .form_label .label_list{position:relative;}
 .form_label p{padding-bottom:10px; margin:0;}
-.form_label .label_list .label{font-size:1.1em; width:20%; margin-right:5px; color:#849c23;}
-.form_label .label_list .form_box{display:inline-block; width:76%; max-width:538px; font-size:1.1em; border:none; border-bottom:1px solid #d9d9d9; border-radius:0;}
+.form_label .label_list .label{font-size:1.0em; width:20%; margin-right:5px; color:#849c23;}
+.form_label .label_list .form_box{display:inline-block; width:76%; max-width:538px; font-size:1.0em; border:none; border-bottom:1px solid #d9d9d9; border-radius:0;}
 .form_label .label_list .form_box:focus{border-bottom:1px solid #849c23;}
 .form_label .label_list .txt_clear{position:absolute; width:18px; height:18px; top:10px; right:0px; text-indent:-9999px; background: url('../images/background_img.png')no-repeat; background-size: 400px 400px; background-position: -292px -84px;}
+.form_label .label_list .label{position:relative; padding-left:5px;}
+.form_label .label_list .needed:before{content:'*'; position:absolute; left:0; color:#ff0000;}
 
 .form_label .label_list .invalid{display:none; margin-left:20%;padding-top:5px; padding-left:30px; font-size:0.85em; color:#ff0000; position:relative;}
 .form_label .label_list .invalid:before{content:''; position:absolute; left:2px; top:3px; width:22px; height:22px; background: url('../images/background_img.png')no-repeat; background-size: 400px 400px; background-position: -293px -9px;}
 
+
 /* 첫화면 작성완료 */
+.app_form .comple .app_title h1{font-size: 2.0em;color: #849c23; font-weight:500;}
 .form_service{background:#f2f2f2;}
 .form_service .all_service{border-bottom:1px solid #d9d9d9;}
 .form_service .all_service p .down{float:right; border:none; width:16px; height:20px; background: url('../images/background_img.png')no-repeat; background-size: 400px 400px; background-position: -296px -59px; margin:2px 0; text-indent:-9999px;}
-.form_service .all_service p{margin-bottom:0; padding:15px 30px;}
+.form_service .all_service p{margin-bottom:0; padding:15px 20px;}
 .form_service > div p .label{font-size:1.25em; color:#333; font-weight:500;}
 .form_service .agr{padding:15px 0;}
-.form_service .agr p{margin-bottom:10px; padding:0 30px;}
+.form_service .agr p{margin-bottom:10px; padding:0 20px;}
 .form_service > div p input{width:15px; height:15px; margin-right:5px; }
 .form_service .agr p:last-child{margin-bottom:0;}
 .form_service .agr p .sub_label{font-size:1.2em; color:#333; font-weight:400;}
@@ -78,6 +84,8 @@ button.common_btn{background:#fff; border:1px solid #849c23; color:#849c23; widt
 .app_form .app_area .app_title .comt span.comt_bold b.green{font-weight:500; color:#849c23;}
 .app_form .app_area .app_title .sub_comt b.line{font-weight:400; border-bottom:1px solid #a0a0a0;}
 .app_form .app_area .main_btn{width:100%; padding:10px 0; background:#849c23; color:#fff;}
+
+
 
 /* 메인페이지 header */
 #header{max-width:768px; width:100%; height:70px; border-bottom:1px solid #d9d9d9; position:fixed; padding:15px; background:#fff; z-index:999; top:0;}
@@ -161,10 +169,12 @@ button.common_btn{background:#fff; border:1px solid #849c23; color:#849c23; widt
 #com_page .my_info .right_info{position:absolute; right:15px; top:15px; text-align:right;}
 #com_page .my_info .mb_btn{right:15px; bottom:65px;}
 #com_page .my_info .right_info p{display:inline-block;}
-#com_page .my_info .right_info p a{font-weight:300;}
+#com_page .my_info .right_info p a{font-weight:300; font-size:1.0em;}
 #com_page .my_info .right_info .com_del a{color:#fff; background:#333; border-radius:15px; padding:0 10px;}
 #com_page .my_info .right_info .com_setup a{color:#fff; background:#849c23; border-radius:15px; padding:0 10px;}
 #com_page .my_info .right_info .add_cmy a{color:#849c23; font-weight:500; border:1px solid #849c23; border-radius:15px; padding:0px 10px;}
+#com_page .my_info button.common_btn .share{padding-left:15px; position:relative;}
+#com_page .my_info button.common_btn .share:before{content:'+'; position:absolute; left:0; top:0px; font-size:1.2em;}
 
 
 /*
@@ -191,7 +201,7 @@ button.common_btn{background:#fff; border:1px solid #849c23; color:#849c23; widt
 
 #content .map{padding:0 20px;}
 .search_area h1.main_tit{font-size:1.4em; color:#333;}
-.search_form{padding:10px 0;}
+.search_form{position:relative; margin:10px 0;}
 .search_form input[type="text"]{border:none; border-bottom: 1px solid #d9d9d9; border-radius:0;}
 .search_form input[type="text"]:focus{border-bottom: 1px solid #849c23;}
 .search_form p.consult{font-size:1.0em; margin:10px 0; color:#a0a0a0; padding-left:20px; position:relative;}
@@ -202,14 +212,19 @@ button.common_btn{background:#fff; border:1px solid #849c23; color:#849c23; widt
 #content .search_result .result_list{padding:15px; border-bottom:1px solid #d9d9d9;}
 #content .search_result .result_list:last-child{border-bottom:none;}
 #content .search_result .result_list:after{display:block; content:''; clear:both;}
-#content .search_result .result_list .result_left{float:left;}
+/* #content .search_result .result_list .result_left{float:left;} */
+#content .search_result .result_list .result_left{margin-bottom:5px;}
 #content .search_result .result_list .result_left h4{font-size:1.3em; color:#333; font-weight:500; display:inline-block;}
 #content .search_result .result_list .result_left p{font-size:1.0em; color:#a9a9a9; font-weight:300; display:inline-block;}
-#content .search_result .result_list .result_right{float:right;}
-#content .search_result .result_list .result_right p{display:inline-block;}
-#content .search_result .result_list .result_right p.com_locat a{width:30px; height:30px; display:inline-block; text-indent:-9999px; position:relative;}
-#content .search_result .result_list .result_right p.com_locat a:before{position:absolute;content:''; width: 30px; height: 30px; background: url('../images/background_img.png') -189px -165px no-repeat; background-size: 300px; right:0; top:0;}
-#content .search_result .result_list .result_right p.com_acc a{border:1px solid #849c23; padding:3px 5px; color:#849c23;}
+/* #content .search_result .result_list .result_btn{float:right;} */
+#content .search_result .result_list .result_btn p{display:inline-block;}
+#content .search_result .result_list .result_btn p.com_locat a{width:25px; height:25px; display:inline-block; text-indent:-9999px; position:relative;}
+#content .search_result .result_list .result_btn p.com_locat a:before{position:absolute;content:'';width: 25px;height: 25px;background: url('../images/background_img.png') -183px -164px no-repeat;background-size: 290px;right:0;top:0;}
+#content .search_result .result_list .result_btn p.com_acc{
+    padding-top: 4px;
+    margin-left: 5px;
+}
+#content .search_result .result_list .result_btn p.com_acc a{border:1px solid #849c23;color:#849c23;width:100%;display: inline-block;line-height: 16px;padding: 0px 5px 3px 5px;}
 
 #footer{padding:0 15px;}
 #footer .footer_img p{max-width:76px; width:100%; margin:15px auto;}
