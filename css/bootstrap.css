@@ -2943,14 +2943,14 @@ input[type="button"].btn-block {
   }
 }
 
-.fade:not(.show) {
+/*.fade:not(.show) {
   opacity: 0;
 }
 
 .collapse:not(.show) {
   display: none;
 }
-
+*/
 .collapsing {
   position: relative;
   height: 0;
