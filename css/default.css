@@ -236,7 +236,7 @@ button.common_btn{position:relative; background:#fff; border:1px solid #849c23; 
 
 .info p{padding:20px; font-size:1.0em;}
 
-.modal .modal-content{z-index:1200;}
+.modal.fade .modal-dialog {transition: -webkit-transform 0.3s ease-out; transition: transform 0.3s ease-out; transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; -webkit-transform: translate(0, -25%); transform: translate(0, -25%);}
 
 
 #footer{padding:0 15px; border-top:1px solid #d9d9d9;}
