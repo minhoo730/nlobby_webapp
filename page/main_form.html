@@ -83,18 +83,19 @@
 					<div class="agr">
 						<p>
 							<input type="checkbox" id="sub_check1" class="nurmal_chk">
-							<label class="sub_label" for="sub_check1">개인정보 위탁에 관한 사항 (필수)</label>
+							<label class="sub_label" for="sub_check1"><a href="#">개인정보 위탁에 관한 사항 (필수)</a></label>
 						</p>
 						<p>
 							<input type="checkbox" id="sub_check2" class="nurmal_chk">
-							<label class="sub_label" for="sub_check2">개인정보 수집항목 및 이용목적 (필수)</label>
+							<label class="sub_label" for="sub_check2"><a href="#">개인정보 수집항목 및 이용목적 (필수)</a></label>
 						</p>
 						<p>
 							<input type="checkbox" id="sub_check3" class="nurmal_chk">
-							<label class="sub_label" for="sub_check3">개인정보의 제3자 제공에 관한 사항 (필수)</label>
+							<label class="sub_label" for="sub_check3"><a href="#">개인정보의 제3자 제공에 관한 사항 (필수)</a></label>
 						</p>
 					</div>
 					<button class="btn form_com" onclick="location.href='../page/form_comple.html';">작성완료</button>
+					<button class="btn form_com" disabled>작성완료</button>
 				</div>
 			</div>
 		</div>
@@ -124,5 +125,17 @@
 						.trigger('propertychange').focus();
 				});
 		</script>
+		<div class="modal fade trust_modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				</div>
+			</div>
+		</div>
+		<div class="modal fade object_modal">
+
+		</div>
+		<div class="modal fade person_modal">
+
+		</div>
 	</body>
 </html>
