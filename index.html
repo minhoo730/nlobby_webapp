@@ -50,22 +50,135 @@
 			</div>	
 			<div id="content">
 				<div class="apply">
-					<div class="row no-gutters">
+					<div class="row">
 						<div class="apply_area col-6">
 							<h2 class="tit">방문신청</h2>
 							<p class="apply_btn"><a href="page/map.html">방문장소 검색</a></p>
 						</div>
 						<div class="location_area col-6">
+							<!--
 							<div class="no_data">
 								<p class="no_txt">주변에 방문신청<br>가능한 곳이 없습니다.</p>
 							</div>
-							<!--
-							<div class="location_area">
+							-->
+							<div class="location">
 								<p>현재 가까운 곳에 있습니다.</p>
 								<div class="data_area">
+									 <div class="owl-carousel owl-theme location_list">			  
+										 <div class="item">
+											<div class="book_mark_area">
+												<button class="book_mark">북마크</button>
+											</div>
+											<div class="lt_img">
+												<a href="https://gsenc.nlobby.com/visitor" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
+											</div>
+											<div class="custom_overlay">
+												<span class="custom_overlay_inner">
+													<a href="https://gsenc.nlobby.com/visitor" class="subject"> 울산항만공사</a>
+												</span>
+											</div>
+										</div>
+										 <div class="item">
+											<div class="book_mark_area">
+												<button class="book_mark">북마크</button>
+											</div>
+											<div class="lt_img">
+												<a href="https://gsenc.nlobby.com/visitor" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
+											</div>
+											<div class="custom_overlay">
+												<span class="custom_overlay_inner">
+													<a href="https://gsenc.nlobby.com/visitor" class="subject"> 울산항만공사</a>
+												</span>
+											</div>
+										</div>
+										 <div class="item">
+											<div class="book_mark_area">
+												<button class="book_mark">북마크</button>
+											</div>
+											<div class="lt_img">
+												<a href="https://gsenc.nlobby.com/visitor" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
+											</div>
+											<div class="custom_overlay">
+												<span class="custom_overlay_inner">
+													<a href="https://gsenc.nlobby.com/visitor" class="subject"> 울산항만공사</a>
+												</span>
+											</div>
+										</div>
+										 <div class="item">
+											<div class="book_mark_area">
+												<button class="book_mark">북마크</button>
+											</div>
+											<div class="lt_img">
+												<a href="#" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
+											</div>
+											<div class="custom_overlay">
+												<span class="custom_overlay_inner">
+													<a href="https://gsenc.nlobby.com/visitor" class="subject"> 울산항만공사</a>
+												</span>
+											</div>
+										</div>
+										 <div class="item">
+											<div class="book_mark_area">
+												<button class="book_mark">북마크</button>
+											</div>
+											<div class="lt_img">
+												<a href="https://gsenc.nlobby.com/visitor" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
+											</div>
+											<div class="custom_overlay">
+												<span class="custom_overlay_inner">
+													<a href="https://gsenc.nlobby.com/visitor" class="subject"> 울산항만공사</a>
+												</span>
+											</div>
+										</div>
+										 <div class="item">
+											<div class="book_mark_area">
+												<button class="book_mark">북마크</button>
+											</div>
+											<div class="lt_img">
+												<a href="https://gsenc.nlobby.com/visitor" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
+											</div>
+											<div class="custom_overlay">
+												<span class="custom_overlay_inner">
+													<a href="https://gsenc.nlobby.com/visitor" class="subject"> 울산항만공사</a>
+												</span>
+											</div>
+										</div>
+									</div>
+									<script>
+										$(document).ready(function() {
+											$('.location_list').owlCarousel({
+												loop: false,
+												center: true,
+												items: 1,
+												margin: 10,
+												responsiveClass: false,
+												startPosition:0,
+												/*
+												autoplay:false,
+												autoplayTimeout:5000,
+												autoplayHoverPause:false,
+												*/
+												touchDrag:true,
+												//navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
+													responsive: {
+													0: {
+														items: 1,
+														nav: false
+													},
+													600: {
+														items: 1,
+														nav: false
+													},
+													1000: {
+														items: 1,
+														nav: false
+													}
+												}
+											})
+										})
+									</script>
 								</div>
 							</div>
-							-->
 						</div>
 					</div>
 				</div>
@@ -73,13 +186,39 @@
 					<div class="bookmark_area">
 						<h2 class="tit">즐겨찾기</h2>
 						<div class="list_area">
-							 <div class="owl-carousel owl-theme">			  
+							 <div class="owl-carousel owl-theme bookmark_list">			  
 								 <div class="item">
 									<div class="book_mark_area">
 										<button class="book_mark">북마크</button>
 									</div>
 									<div class="lt_img">
-										<a href="#" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
+										<a href="https://gsenc.nlobby.com/visitor" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
+									</div>
+									<div class="custom_overlay">
+										<span class="custom_overlay_inner">
+											<a href="https://gsenc.nlobby.com/visitor" class="subject"> 울산항만공사</a>
+										</span>
+									</div>
+								</div>
+								 <div class="item">
+									<div class="book_mark_area">
+										<button class="book_mark">북마크</button>
+									</div>
+									<div class="lt_img">
+										<a href="https://gsenc.nlobby.com/visitor" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
+									</div>
+									<div class="custom_overlay">
+										<span class="custom_overlay_inner">
+											<a href="https://gsenc.nlobby.com/visitor" class="subject"> 울산항만공사</a>
+										</span>
+									</div>
+								</div>
+								 <div class="item">
+									<div class="book_mark_area">
+										<button class="book_mark">북마크</button>
+									</div>
+									<div class="lt_img">
+										<a href="https://gsenc.nlobby.com/visitor" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
 									</div>
 									<div class="custom_overlay">
 										<span class="custom_overlay_inner">
@@ -105,7 +244,7 @@
 										<button class="book_mark">북마크</button>
 									</div>
 									<div class="lt_img">
-										<a href="#" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
+										<a href="https://gsenc.nlobby.com/visitor" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
 									</div>
 									<div class="custom_overlay">
 										<span class="custom_overlay_inner">
@@ -118,33 +257,7 @@
 										<button class="book_mark">북마크</button>
 									</div>
 									<div class="lt_img">
-										<a href="#" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
-									</div>
-									<div class="custom_overlay">
-										<span class="custom_overlay_inner">
-											<a href="https://gsenc.nlobby.com/visitor" class="subject"> 울산항만공사</a>
-										</span>
-									</div>
-								</div>
-								 <div class="item">
-									<div class="book_mark_area">
-										<button class="book_mark">북마크</button>
-									</div>
-									<div class="lt_img">
-										<a href="#" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
-									</div>
-									<div class="custom_overlay">
-										<span class="custom_overlay_inner">
-											<a href="https://gsenc.nlobby.com/visitor" class="subject"> 울산항만공사</a>
-										</span>
-									</div>
-								</div>
-								 <div class="item">
-									<div class="book_mark_area">
-										<button class="book_mark">북마크</button>
-									</div>
-									<div class="lt_img">
-										<a href="#" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
+										<a href="https://gsenc.nlobby.com/visitor" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
 									</div>
 									<div class="custom_overlay">
 										<span class="custom_overlay_inner">
@@ -156,7 +269,7 @@
 						</div>
 						<script>
 							$(document).ready(function() {
-								$('.owl-carousel').owlCarousel({
+								$('.bookmark_list').owlCarousel({
 									loop: false,
 									center: true,
 									items: 2,
@@ -197,16 +310,128 @@
 				</div>
 				<div class="last_list">
 					<h2 class="tit">최근 방문장소</h2>
-					<div class="no_data">
-						<p class="no_txt">최근 방문한 장소가 없습니다.</p>
-					</div>
+						<div class="list_area">
+							 <div class="owl-carousel owl-theme last_list_owl">			  
+								 <div class="item">
+									<div class="book_mark_area">
+										<button class="book_mark">북마크</button>
+									</div>
+									<div class="lt_img">
+										<a href="https://gsenc.nlobby.com/visitor" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
+									</div>
+									<div class="custom_overlay">
+										<span class="custom_overlay_inner">
+											<a href="https://gsenc.nlobby.com/visitor" class="subject"> 울산항만공사</a>
+										</span>
+									</div>
+								</div>
+								 <div class="item">
+									<div class="book_mark_area">
+										<button class="book_mark">북마크</button>
+									</div>
+									<div class="lt_img">
+										<a href="https://gsenc.nlobby.com/visitor" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
+									</div>
+									<div class="custom_overlay">
+										<span class="custom_overlay_inner">
+											<a href="https://gsenc.nlobby.com/visitor" class="subject"> 울산항만공사</a>
+										</span>
+									</div>
+								</div>
+								 <div class="item">
+									<div class="book_mark_area">
+										<button class="book_mark">북마크</button>
+									</div>
+									<div class="lt_img">
+										<a href="https://gsenc.nlobby.com/visitor" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
+									</div>
+									<div class="custom_overlay">
+										<span class="custom_overlay_inner">
+											<a href="https://gsenc.nlobby.com/visitor" class="subject"> 울산항만공사</a>
+										</span>
+									</div>
+								</div>
+								 <div class="item">
+									<div class="book_mark_area">
+										<button class="book_mark">북마크</button>
+									</div>
+									<div class="lt_img">
+										<a href="#" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
+									</div>
+									<div class="custom_overlay">
+										<span class="custom_overlay_inner">
+											<a href="https://gsenc.nlobby.com/visitor" class="subject"> 울산항만공사</a>
+										</span>
+									</div>
+								</div>
+								 <div class="item">
+									<div class="book_mark_area">
+										<button class="book_mark">북마크</button>
+									</div>
+									<div class="lt_img">
+										<a href="https://gsenc.nlobby.com/visitor" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
+									</div>
+									<div class="custom_overlay">
+										<span class="custom_overlay_inner">
+											<a href="https://gsenc.nlobby.com/visitor" class="subject"> 울산항만공사</a>
+										</span>
+									</div>
+								</div>
+								 <div class="item">
+									<div class="book_mark_area">
+										<button class="book_mark">북마크</button>
+									</div>
+									<div class="lt_img">
+										<a href="https://gsenc.nlobby.com/visitor" class="lt_img" target="blink"><img src="images/gs-cal.png" alt=""></a>
+									</div>
+									<div class="custom_overlay">
+										<span class="custom_overlay_inner">
+											<a href="https://gsenc.nlobby.com/visitor" class="subject"> 울산항만공사</a>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<script>
+							$(document).ready(function() {
+								$('.last_list_owl').owlCarousel({
+									loop: false,
+									center: true,
+									items: 2,
+									margin: 10,
+									responsiveClass: false,
+									startPosition:0,
+									/*
+									autoplay:false,
+									autoplayTimeout:5000,
+									autoplayHoverPause:false,
+									*/
+									touchDrag:true,
+									//navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
+										responsive: {
+										0: {
+											items: 2,
+											nav: false
+										},
+										600: {
+											items: 2,
+											nav: false
+										},
+										1000: {
+											items: 2,
+											nav: false
+										}
+									}
+								})
+							})
+						</script>
 				</div>
 			</div>
 			<div id="footer">
 				<div class="footer_img"><p><img src="images/logo-copy.png"/></p></div>
 				<div class="footer_menu">
-					<p><a href="#">이용약관</a></p>
-					<p><a href="#">개인정보 이용방침</a></p>
+					<p><a href="page/info.html">이용약관</a></p>
+					<p><a href="page/protection.html">개인정보 이용방침</a></p>
 				</div>
 			</div>
 		</div>
