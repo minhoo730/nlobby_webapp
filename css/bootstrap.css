@@ -5432,7 +5432,7 @@ button.close {
   opacity: 0;
 }
 
-.modal-backdrop.show {
+.modal-backdrop.in {
   opacity: 0.5;
 }
 
