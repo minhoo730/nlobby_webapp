@@ -83,15 +83,15 @@
 					<div class="agr">
 						<p>
 							<input type="checkbox" id="sub_check1" class="nurmal_chk">
-							<label class="sub_label" for="sub_check1"><a data-toggle="modal" data-target=".trust_modal">개인정보 위탁에 관한 사항 (필수)</a></label>
+							<label class="sub_label" for="sub_check1"><a data-toggle="modal" data-target="#trust_modal">개인정보 위탁에 관한 사항 (필수)</a></label>
 						</p>
 						<p>
 							<input type="checkbox" id="sub_check2" class="nurmal_chk">
-							<label class="sub_label" for="sub_check2"><a data-toggle="modal" data-target=".object_modal">개인정보 수집항목 및 이용목적 (필수)</a></label>
+							<label class="sub_label" for="sub_check2"><a data-toggle="modal" data-target="#object_modal">개인정보 수집항목 및 이용목적 (필수)</a></label>
 						</p>
 						<p>
 							<input type="checkbox" id="sub_check3" class="nurmal_chk">
-							<label class="sub_label" for="sub_check3"><a data-toggle="modal" data-target=".person_modal">개인정보의 제3자 제공에 관한 사항 (필수)</a></label>
+							<label class="sub_label" for="sub_check3"><a data-toggle="modal" data-target="#person_modal">개인정보의 제3자 제공에 관한 사항 (필수)</a></label>
 						</p>
 					</div>
 					<button class="btn form_com" onclick="location.href='../page/form_comple.html';">작성완료</button>
@@ -99,7 +99,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="modal fade trust_modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal fade trust_modal" id="trust_modal" tabindex="-1" role="dialog" aria-hidden="true">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -113,6 +113,11 @@
 					<button type="button" class="btn btn-primary">Save changes</button>
 				</div>
 			</div>
+		</div>
+
+		<div class="modal fade object_modal" id="object_modal" tabindex="-1" role="dialog" aria-hidden="true">
+		</div>
+		<div class="modal fade person_modal" id="person_modal" tabindex="-1" role="dialog" aria-hidden="true">
 		</div>
 
 		<!--  첫 화면 방문신청정보 작성 폼 -->
