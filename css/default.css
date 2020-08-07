@@ -31,7 +31,7 @@ button.common_btn{position:relative; background:#fff; border:1px solid #849c23; 
 }
 
 
-#wrap{height: 100%; width:100%; max-width:768px;}
+#wrap{width:100%; max-width:768px; position:relative;}
 /* 폼작성 페이지_200729 */
 .app_form{width:100%; margin:0 auto; display: table; height: 100%;}
 .app_form .close_btn{position:absolute; top:30px;}
@@ -236,7 +236,8 @@ button.common_btn{position:relative; background:#fff; border:1px solid #849c23; 
 
 .info p{padding:20px; font-size:1.0em;}
 
-.modal .modal-content{z-index:1200;}
+.modal .modal-dialog{z-index: 1200; width: 100%; margin: 0 auto; max-width: 768px; height: 100%;}
+.modal .modal-dialog .modal-title{font-size:1.5em;}
 
 
 #footer{padding:0 15px; border-top:1px solid #d9d9d9;}
