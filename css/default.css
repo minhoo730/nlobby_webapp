@@ -134,7 +134,13 @@ button.common_btn{position:relative; background:#fff; border:1px solid #849c23; 
 .owl-stage{position:absolute; left:0;}
 .item{border:1px solid #d9d9d9; border-radius:5px; overflow:hidden; text-align:center; position:relative;}
 .item .book_mark_area{position:absolute; right:5px; top:5px;}
-.item .book_mark_area button{text-indent:-9999px;background: url('../images/background_img.png')no-repeat -191px -6px;background-size: 300px;border-radius:100%;width:25px;height:25px;border:none;}
+.item .book_mark_area button.book_mark{text-indent:-9999px; background: url('../images/background_img.png')no-repeat -191px -6px; background-size: 300px; border-radius:100%; width:25px; height:25px; border:none;}
+
+.item .book_mark_area button.book_mark_on{text-indent:-9999px; background: url('../images/background_img.png')no-repeat -191px -33px; background-size: 300px; border-radius:100%; width:25px; height:25px; border:none;}
+
+.item .book_mark_area button.del_ico{text-indent:-9999px; background: url('../images/background_img.png')no-repeat -191px -60px; background-size: 300px; border-radius:100%; width:25px; height:25px; border:none;}
+
+
 .item .lt_img {background:#f5f5f5; padding:20px 0;}
 .item .subject{color:#333; font-weight:500; font-size:1.2em; letter-spacing:-0.5px;}
 .item .lt_date {display:none}
@@ -183,7 +189,7 @@ button.common_btn{position:relative; background:#fff; border:1px solid #849c23; 
 #com_page .my_info button.common_btn .share:before{content:'+'; position:absolute; left:0; top:0px; font-size:1.2em;}
 
 .list_my{margin-top:20px;}
-.list_my .list_area{margin:20px 0; position:relative;}
+.list_my .list_area{margin:20px 0; padding:0 15px; position:relative;}
 .user_info .form_label{margin:20px 0; padding:0 15px;}
 .user_info .form_labe .consult{padding-left:20px; }
 
