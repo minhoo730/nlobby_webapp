@@ -74,6 +74,7 @@ button.common_btn{position:relative; background:#fff; border:1px solid #849c23; 
 .form_service .agr p:last-child{margin-bottom:0;}
 .form_service .agr p .sub_label{font-size:1.2em; color:#333; font-weight:400;}
 .form_service .agr p .service_view{float:right; cursor:pointer; font-size:1.2em; color:#8a8a8a; font-weight:400;}
+.app_form .agr p a{float:right; font-size:1.2em; color:#8a8a8a;}
 .app_form .app_area .app_title p.sub_comt{font-weight:300;}
 
 .form_service button.form_com{width:100%; padding:10px 0; background:#849c23; color:#fff; border-radius:0; font-weight:400;}
@@ -181,24 +182,6 @@ button.common_btn{position:relative; background:#fff; border:1px solid #849c23; 
 #com_page .my_info button.common_btn .share{padding-left:15px; position:relative;}
 #com_page .my_info button.common_btn .share:before{content:'+'; position:absolute; left:0; top:0px; font-size:1.2em;}
 
-
-/*
-#com_page .my_info .right_info .cmy_mes{color:#a0a0a0; font-weight:500; position:relative; padding-left:20px; margin-top:5px;}
-#com_page .my_info .right_info .cmy_mes:before{position:absolute; content:''; background:url('../images/background_img.png')no-repeat -219px -28px; background-size:300px; width:20px; height:20px; left:0; top:1px;}
-*/
-
-
-/*
-#com_page .share{position:relative; width:100%; padding:20px 0;}
-#com_page .share > div{margin-top:10px;}
-#com_page .share p{text-align:center;}
-#com_page .share p a{width: 50px;display: inline-block;position:relative;margin: 0 auto;padding: 55px 0 0 0; color:#333;}
-#com_page .share p a:before{position:absolute;content:'';width: 100%;height:50px; background:url('../images/background_img.png')no-repeat; background-size: 330px; left:0; top:0; background-color:#869e27; border-radius: 50%;}
-#com_page .share p.kakao a:before{background-color:#fae100;background-position: -160px -40px;}
-#com_page .share p.mess_ico a:before{background-position: -199px -130px;}
-#com_page .share p.nlobby_ico a:before{background-position: -160px 5px;}
-#com_page .share p.more_ico a:before{background-position: -199px -91px;}
-*/
 .list_my{margin-top:20px;}
 .list_my .list_area{margin:20px 0; position:relative;}
 .user_info .form_label{margin:20px 0; padding:0 15px;}
@@ -234,11 +217,9 @@ button.common_btn{position:relative; background:#fff; border:1px solid #849c23; 
 .search_result .result_list .locat_map.in{display:block;}
 .search_result .result_list .locat_map img{width:100%;}
 
-.info p{padding:20px; font-size:1.0em;}
-
-.modal .modal-dialog{z-index: 1200; width: 100%; margin: 0 auto; max-width: 768px; height: 100%;}
-.modal .modal-dialog .modal-title{font-size:1.5em;}
-
+#wrap .info{padding:90px 15px 60px 15px;}
+#wrap .info h3{font-size:1.5em; margin-bottom:20px;}
+#wrap .info h4{font-size:1.2em; margin:20px 0 10px 0;}
 
 #footer{padding:0 15px; border-top:1px solid #d9d9d9;}
 #footer .footer_img p{max-width:76px; width:100%; margin:15px auto;}
